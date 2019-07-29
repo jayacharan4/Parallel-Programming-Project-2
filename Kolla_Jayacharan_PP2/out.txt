@@ -1,0 +1,176 @@
+quanah:/parallel$ gcc -fopenmp twoloops.c
+quanah:/parallel$ ./a.out
+
+Initializing Input Matrices...
+Input Initialized Successfully! Input And Output Too Large To Display.
+
+
+ THE INNER TWO LOOPS ARE PARALLELIZED
+==================================================
+COMPUTING IN PARALLEL WITH 1 THREADS
+
+Elapsed time = 15.652 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 0 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+-------------------------------------------------------
+COMPUTING IN PARALLEL WITH 2 THREADS
+
+Elapsed time = 8.298 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 0 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+-------------------------------------------------------
+COMPUTING IN PARALLEL WITH 4 THREADS
+
+Elapsed time = 5.034 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 0 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+-------------------------------------------------------
+COMPUTING IN PARALLEL WITH 8 THREADS
+
+Elapsed time = 4.315 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 0 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+-------------------------------------------------------
+
+
+ALL THREE LOOPS ARE PARALLELIZED
+===============================================
+COMPUTING ,IN PARALLEL WITH 1 THREADS
+
+Elapsed time = 14.491 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 0 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+-------------------------------------------------------
+COMPUTING ,IN PARALLEL WITH 2 THREADS
+
+Elapsed time = 7.69 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 0 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+-------------------------------------------------------
+COMPUTING ,IN PARALLEL WITH 4 THREADS
+
+Elapsed time = 3.885 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 0 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+-------------------------------------------------------
+COMPUTING ,IN PARALLEL WITH 8 THREADS
+
+Elapsed time = 2.331 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 0 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+-------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+INNER MOST LOOP PARALLELIZED
+===============================================
+COMPUTING ,IN PARALLEL WITH 1 THREADS
+
+Elapsed time = 17.934 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 0 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+-------------------------------------------------------
+COMPUTING ,IN PARALLEL WITH 2 THREADS
+
+Elapsed time = 14.6889 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 0 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+-------------------------------------------------------
+COMPUTING ,IN PARALLEL WITH 4 THREADS
+
+Elapsed time = 9.717 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 0 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+-------------------------------------------------------
+COMPUTING ,IN PARALLEL WITH 8 THREADS
+
+Elapsed time = 4.883 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 0 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+-------------------------------------------------------
+
+
+quanah:/hello$ gcc -fopenmp gauss_elim.c
+quanah:/hello$ ./a.out
+ENTER NUMBER OF THREADS1
+
+Initializing Input Matrices...
+Input Initialized Successfully! Input Too Large To Display.
+
+Computing Parallelly...
+NUMBER OF THREADS CREATED: 1
+
+Elapsed time = 1248.54 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 62500 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+--------------------------------------------
+quanah:/hello$ ./a.out
+ENTER NUMBER OF THREADS2
+
+Initializing Input Matrices...
+Input Initialized Successfully! Input Too Large To Display.
+
+Computing Parallelly...
+NUMBER OF THREADS CREATED: 2
+
+Elapsed time = 1187.03 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 70500 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+--------------------------------------------
+quanah:/hello$ ./a.out
+ENTER NUMBER OF THREADS4
+
+Initializing Input Matrices...
+Input Initialized Successfully! Input Too Large To Display.
+
+Computing Parallelly...
+NUMBER OF THREADS CREATED: 4
+
+Elapsed time = 876.215 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 80000 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+--------------------------------------------
+quanah:/hello$ ./a.out
+ENTER NUMBER OF THREADS8
+
+Initializing Input Matrices...
+Input Initialized Successfully! Input Too Large To Display.
+
+Computing Parallelly...
+NUMBER OF THREADS CREATED: 8
+
+Elapsed time = 535.362 ms.
+(CPU times are accurate to the nearest 500 ms)
+My total CPU time for parent = 90500 ms.
+My system CPU time for parent = 0 ms.
+My total CPU time for child processes = 0 ms.
+--------------------------------------------
